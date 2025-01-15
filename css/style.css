@@ -1,134 +1,48 @@
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.8rem;
-}
-
-header {
-  background-color: white;
-}
-
-nav ul {
-  margin-left: 0rem;
-  list-style-type: none;
-  display: flex;
-  justify-content: space-between;
-}
-
-nav ul li a {
-  text-decoration: none;
-}
-
-main {
-  background-color: yellow;
-  font-size: 1.5rem;
-  display: flex;
-  margin: 1rem auto;
-  border: 0rem;
-  padding: 0rem;
-  justify-content: space-around;
-  box-sizing: border-box;
-  border-radius: 2rem;
-}
-
-main p {
-  text-align: justify;
-  box-sizing: border-box;
-  margin: 1rem 1.5rem;
-  line-height: 1.8rem;
-}
-
-footer {
-  background-color: lightskyblue;
-  box-sizing: border-box;
-  padding: 0rem;
-  border: 0rem;
-  margin: 0rem;
-  border-radius: 2rem;
-}
-
-footer p {
-  box-sizing: border-box;
-  text-align: justify;
-  font-size: 1.7rem;
-  margin: 1rem;
-  border: 0rem;
-  padding: 0rem;
-}
-
-.container {
-  width: 100%;
-  display: flex;
-  background-color: lightgray;
-  margin: 0 auto;
-  box-sizing: border-box;
-  justify-content: space-around;
-  padding: 1rem 0;
-  border-radius: 2rem;
-}
-
-.title {
-  text-align: center;
-  color: red;
-  font-family: monospace;
-  margin-bottom: 1rem;
-  background-color: #c5e2ed;
-  box-sizing: border-box;
-  padding: 1rem 0;
-  border-radius: 2rem;
-}
-
-.btn {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.btn-item {
-  box-sizing: border-box;
-  display: block;
-  background-color: orange;
+/* Skip link style */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: #fff;
+  color: #000;
   padding: 1rem;
-  margin: 2rem;
-  border-radius: 0.8rem;
+  z-index: 1000;
 }
 
-.btn-item :hover {
-  background-color: purple;
-  color: white;
-  border-radius: 0.5rem;
-  padding: 0.5rem;
+.skip-link:focus {
+  top: 0;
 }
 
-.img_container {
+/* Comment out existing styling for li */
+nav ul li {
+  /* styling for li element commented out */
+}
+
+/* Nav adjustments */
+nav {
+  display: inline-block;
+  width: 80%;
+}
+
+/* Style for image in nav */
+nav img {
+  width: 10%;
+}
+
+/* Grid class styling */
+.grid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  gap: 1rem;
+}
+
+.grid img {
+  width: 100%;
+}
+
+/* Flex class adjustments */
+.flex {
   display: flex;
-  box-sizing: border-box;
+  flex-wrap: wrap;
   justify-content: space-around;
-  margin: 1.5rem;
-  flex-flow: row;
-}
-
-.main_container {
-  display: flex;
-  box-sizing: border-box;
-  justify-content: center;
-  align-items: center;
-}
-
-main div img {
-  box-sizing: border-box;
-  margin: 0 0.5rem;
-  border-radius: 0.8rem;
-}
-
-header img {
-  display: block;
-  background-color: black;
-  border-radius: 0.8rem;
-  margin: 0.3rem black;
 }
